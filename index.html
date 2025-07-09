@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Tomasz Krasuski">
-  <meta name="description" content="Portfolio grafika komputerowego Tomasza Krasuskiego - Krasuski Design">
+  <meta name="description" content="Portfolio Tomasza Krasuskiego – Grafik komputerowy">
   <title>Krasuski Design</title>
   <style>
     * {
@@ -14,130 +14,115 @@
       font-family: 'Segoe UI', sans-serif;
     }
     body {
-      background-color: #f9f9f9;
-      color: #333;
+      background: url('images/Portfolio_tlo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       line-height: 1.6;
     }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+      backdrop-filter: blur(4px);
+    }
     header {
-      background: #111;
-      color: #fff;
-      padding: 2rem;
+      background: #000;
+      padding: 2rem 1rem;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #222;
-      padding: 1rem;
-    }
-    nav a {
       color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
     section {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #fff;
     }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .portfolio-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .portfolio-links a {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .portfolio-links a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1.2rem;
+    }
+    .contact p {
+      margin: 0.5rem 0;
     }
     footer {
-      background: #111;
+      background: #000;
       color: #ccc;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 1.5rem;
       margin-top: 4rem;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 0.5rem;
-      color: #333;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Krasuski Design</h1>
-    <p>Tomasz Krasuski – grafik komputerowy</p>
+    <p>Tomasz Krasuski - grafik komputerowy</p>
   </header>
 
-  <nav>
-    <a href="#about">O mnie</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Kontakt</a>
-  </nav>
-
   <section id="about">
-    <h2>Cześć!</h2>
-    <p>
-    Dziękuje za odwiedzenie mojej strony, liczę że zostaniesz na dłużej.
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      Grafika to nie tylko moja praca – to moja największa pasja. Od lat rozwijam swoje umiejętności w projektowaniu wizualnym – od fotomanipulacji i brandingu po UI/UX i projekty do druku. Mam solidne doświadczenie i kreatywne podejście. Nie boję się żadnych wyzwań – zrealizuję każdy projekt graficzny, bez względu na jego złożoność. Jeśli szukasz kogoś, kto zrobi to dobrze, profesjonalnie i z pełnym zaangażowaniem – właśnie mnie znalazłeś.
     </p>
-    <p>
-  Grafika to nie tylko moja praca – to moja największa pasja.
-  Od lat rozwijam swoje umiejętności w projektowaniu wizualnym – od fotomanipulacji, obróbki zdjęć i brandingu po UI/UX i projekty do druku.
-  Mam solidne doświadczenie i kreatywne podejście. Nie boję się żadnych wyzwań – zrealizuję każdy projekt graficzny, bez względu na jego złożoność.
-  Przeniosę twoją wizję na ekran – wykonam projekt od koncepcji po gotowy plik nadający się do druku, opublikowania. 
-  Jeśli szukasz kogoś, kto zrobi Twój projekt profesjonalnie i z pełnym zaangażowaniem – skontakuj się </p>
   </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
-<div class="gallery">
-  <div>
-    <h3>Fotomanipulacja</h3>
-    <img src="images/Fotomanipulacja1.jpg" alt="Fotomanipulacja" />
-  </div>
-    <div>
-    <h3>Obraz weselny na płótnie</h3>
-    <img src="images/Obraz_weselny1.jpg" alt="Obraz weselny" />
-  </div>
-  <div>
-    <h3>Projekt kalendarza</h3>
-    <img src="images/Projekt_kalendarza 1.jpg" alt="Kalendarz" />
-  </div>
-  <div>
-    <h3>Branding</h3>
-    <img src="images/branding1.jpg" alt="Branding" />
-  </div>
-  <div>
-    <h3>UI/UX</h3>
-    <img src="images/UI1.jpg" alt="UI/UX" />
-  </div>
-   <div>
-    <h3>Druk - etykiety, wizytówki, zaproszenia</h3>
-    <img src="images/DRUK1.jpg" alt=">Druk - etykiety, wizytówki, zaproszenia" />
-  </div>
-   <div>
-    <h3>WEB</h3>
-    <img src="images/WEB1.jpg" alt="WEB" />
-  </div>
-</div>
-
+    <div class="portfolio-links">
+      <a href="branding.html" target="_blank">Branding</a>
+      <a href="druk.html" target="_blank">Druk</a>
+      <a href="uiux.html" target="_blank">UI/UX</a>
+      <a href="weselne.html" target="_blank">Prezenty weselne</a>
+      <a href="kalendarze.html" target="_blank">Projekty kalendarzy</a>
+      <a href="fotomanipulacja.html" target="_blank">Fotomanipulacja</a>
+      <a href="web.html" target="_blank">WEB</a>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Kontakt</h2>
     <div class="contact">
-      <p>Email: <a href="mailto:krasuski.design@gmail.com">krasuski.design@gmail.com</a></p>
-      <p>Telefon: 695 498 561</p>
-      <p><a href="https://www.instagram.com/krasuski.design/" target="_blank">Instagram</a></p>
-      <p><a href="https://www.behance.net/tomaszkrasuski" target="_blank">Behance</a></p>
+      <p><strong>E-mail:</strong> krasuski.design@gmail.com</p>
+      <p><strong>Telefon:</strong> 695 498 561</p>
+      <p><strong>Instagram:</strong> krasuski.design</p>
+      <p><strong>Behance:</strong> <a href="https://www.behance.net/tomaszkrasuski" target="_blank" style="color:#fff; text-decoration: underline;">https://www.behance.net/tomaszkrasuski</a></p>
     </div>
   </section>
 
