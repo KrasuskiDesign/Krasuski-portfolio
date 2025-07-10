@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Tomasz Krasuski">
-  <meta name="description" content="Portfolio Tomasza Krasuskiego – Grafik komputerowy">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Tomasz Krasuski" />
+  <meta name="description" content="Portfolio Tomasza Krasuskiego – Grafik komputerowy" />
   <title>Krasuski Design</title>
+
+  <!-- Font Awesome dla ikonek -->
+  <script src="https://kit.fontawesome.com/a2e0c2b4be.js" crossorigin="anonymous"></script>
+
   <style>
     * {
       margin: 0;
@@ -13,12 +17,14 @@
       box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
     }
+
     body {
       background: url('images/background4.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
       line-height: 1.6;
     }
+
     body::before {
       content: "";
       position: fixed;
@@ -30,31 +36,43 @@
       z-index: -1;
       backdrop-filter: blur(4px);
     }
+
     header {
       background: #000;
       padding: 2rem 1rem;
       text-align: center;
     }
+
     header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
       color: #fff;
     }
+
     header p {
       font-size: 1.2rem;
       color: #ccc;
     }
+
     section {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
+
+    #about, #contact {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
     section h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
       text-align: center;
       color: #fff;
     }
+
     .portfolio-links {
       display: flex;
       flex-wrap: wrap;
@@ -62,26 +80,38 @@
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     .portfolio-links a {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.15);
       padding: 1rem 1.5rem;
-      border-radius: 8px;
+      border-radius: 10px;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, background 0.3s;
     }
+
     .portfolio-links a:hover {
       background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-4px);
     }
+
     .contact {
       text-align: center;
       margin-top: 3rem;
       font-size: 1.2rem;
     }
+
     .contact p {
       margin: 0.5rem 0;
     }
+
+    .contact i {
+      margin-right: 0.5rem;
+      color: #ffd700;
+    }
+
     footer {
       background: #000;
       color: #ccc;
@@ -91,6 +121,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Krasuski Design</h1>
@@ -99,13 +130,16 @@
 
   <section id="about">
     <p style="text-align: center; max-width: 1400px; margin: auto;">
-      Grafika to nie tylko moja praca – to moja największa pasja. </p>
-      <p style="text-align: center; max-width: 1000px; margin: auto;">
-     Od lat rozwijam swoje umiejętności w projektowaniu wizualnym – od fotomanipulacji, obróbki zdjęć i brandingu po UI/UX i projekty do druku.
-    Mam solidne doświadczenie i kreatywne podejście. Nie boję się żadnych wyzwań – zrealizuję każdy projekt graficzny, bez względu na jego złożoność.
-    Przeniosę twoją wizję na ekran – wykonam projekt od koncepcji po gotowy plik nadający się do druku, opublikowania.
-     <p style="text-align: center; max-width: 1200px; margin: auto;">
-     Jeśli szukasz kogoś, kto zrobi to dobrze, profesjonalnie i z pełnym zaangażowaniem – właśnie znalazłeś! </p>
+      Grafika to nie tylko moja praca – to moja największa pasja.
+    </p>
+    <p style="text-align: center; max-width: 1000px; margin: auto;">
+      Od lat rozwijam swoje umiejętności w projektowaniu wizualnym – od fotomanipulacji, obróbki zdjęć i brandingu po UI/UX i projekty do druku.
+      Mam solidne doświadczenie i kreatywne podejście. Nie boję się żadnych wyzwań – zrealizuję każdy projekt graficzny, bez względu na jego złożoność.
+      Przeniosę twoją wizję na ekran – wykonam projekt od koncepcji po gotowy plik nadający się do druku, opublikowania.
+    </p>
+    <p style="text-align: center; max-width: 1200px; margin: auto;">
+      Jeśli szukasz kogoś, kto zrobi to dobrze, profesjonalnie i z pełnym zaangażowaniem – właśnie znalazłeś!
+    </p>
   </section>
 
   <section id="portfolio">
@@ -124,10 +158,10 @@
   <section id="contact">
     <h2>Kontakt</h2>
     <div class="contact">
-      <p><strong>Telefon:</strong> 695 498 561</p>
-      <p><strong>E-mail:</strong> krasuski.design@gmail.com</p>
-      <p><strong>Behance:</strong> <a href="https://www.behance.net/tomaszkrasuski" target="_blank" style="color:#fff; text-decoration: underline;">https://www.behance.net/tomaszkrasuski</a></p>
-      <p><strong>Instagram:</strong> krasuski.design <a href="https://www.instagram.com/krasuski.design/" target="_blank" style="color:#fff; text-decoration: underline;">https://www.instagram.com/krasuski.design/</a></p>
+      <p><i class="fas fa-phone"></i><strong>Telefon:</strong> 695 498 561</p>
+      <p><i class="fas fa-envelope"></i><strong>E-mail:</strong> krasuski.design@gmail.com</p>
+      <p><i class="fab fa-behance"></i><strong>Behance:</strong> <a href="https://www.behance.net/tomaszkrasuski" target="_blank" style="color:#fff; text-decoration: underline;">https://www.behance.net/tomaszkrasuski</a></p>
+      <p><i class="fab fa-instagram"></i><strong>Instagram:</strong> krasuski.design <a href="https://www.instagram.com/krasuski.design/" target="_blank" style="color:#fff; text-decoration: underline;">https://www.instagram.com/krasuski.design/</a></p>
     </div>
   </section>
 
