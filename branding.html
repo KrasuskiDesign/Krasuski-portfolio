@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Branding – Krasuski Design</title>
   <style>
     * {
@@ -11,11 +11,13 @@
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
     }
+
     body {
       background: url('images/background_branding.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #f0f0f0;
     }
+
     body::before {
       content: "";
       position: fixed;
@@ -27,25 +29,31 @@
       z-index: -1;
       backdrop-filter: blur(4px);
     }
+
     header {
       background: #000;
       padding: 2rem 1rem;
       text-align: center;
     }
+
     header h1 {
       font-size: 3rem;
       color: #fff;
     }
+
     .category {
       margin: 3rem auto;
       max-width: 1000px;
     }
+
     .category h2 {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     }
+
     .images {
       display: flex;
       flex-wrap: wrap;
@@ -53,23 +61,40 @@
       gap: 1.5rem;
       padding: 0 1rem;
     }
+
     .images img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
       background: #fff;
       padding: 0.25rem;
       width: 100%;
       max-width: 480px;
     }
-    .back-link {
-      display: block;
+
+    .back-container {
       text-align: center;
-      margin-top: 3rem;
+      margin: 4rem 0 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      text-align: center;
       text-decoration: none;
-      color: #ccc;
+      color: #fff;
       font-weight: bold;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
     }
   </style>
 </head>
@@ -81,36 +106,37 @@
   <div class="category">
     <h2>Baner reklamowy Iphone</h2>
     <div class="images">
-      <img src="images/branding/Baner_iphone_1.jpg" alt="Baner iPhone 1">
-      <img src="images/branding/Baner_iphone_2.jpg" alt="Baner iPhone 2">
+      <img src="images/branding/Baner_iphone_1.jpg" alt="Baner iPhone 1" />
+      <img src="images/branding/Baner_iphone_2.jpg" alt="Baner iPhone 2" />
     </div>
   </div>
 
   <div class="category">
     <h2>UI/UX Design</h2>
     <div class="images">
-      <img src="images/branding/UI_mockup_1.jpg" alt="UI Mockup 1">
-      <img src="images/branding/UI_mockup_2.jpg" alt="UI Mockup 2">
-      <img src="images/branding/UI_mockup_3.jpg" alt="UI Mockup 3">
-      <img src="images/branding/UI_mockup_4.jpg" alt="UI Mockup 4">
+      <img src="images/branding/UI_mockup_1.jpg" alt="UI Mockup 1" />
+      <img src="images/branding/UI_mockup_2.jpg" alt="UI Mockup 2" />
+      <img src="images/branding/UI_mockup_3.jpg" alt="UI Mockup 3" />
+      <img src="images/branding/UI_mockup_4.jpg" alt="UI Mockup 4" />
     </div>
   </div>
 
   <div class="category">
     <h2>Wizualizacja marki</h2>
     <div class="images">
-      <img src="images/branding/Hulajnoga_logo.png" alt="Logo Hulajnogi">
-      <img src="images/branding/Hulajnoga_mockup.png" alt="Mockup Hulajnogi">
-      <img src="images/branding/Hulajnoga_wizualizacja.jpg" alt="Wizualizacja Hulajnogi">
-      <img src="images/branding/Hulajnoga_branding.jpg" alt="Branding Hulajnogi">
-      <img src="images/branding/Hulajnoga_koszulka.jpg" alt="Koszulka Hulajnogi">
-      <img src="images/branding/Hulajnoga_strona_1.jpg" alt="Strona 1">
-      <img src="images/branding/Hulajnoga_strona_2.jpg" alt="Strona 2">
-      <img src="images/branding/Hulajnoga_strona_3.jpg" alt="Strona 3">
+      <img src="images/branding/Hulajnoga_logo.png" alt="Logo Hulajnogi" />
+      <img src="images/branding/Hulajnoga_mockup.png" alt="Mockup Hulajnogi" />
+      <img src="images/branding/Hulajnoga_wizualizacja.jpg" alt="Wizualizacja Hulajnogi" />
+      <img src="images/branding/Hulajnoga_branding.jpg" alt="Branding Hulajnogi" />
+      <img src="images/branding/Hulajnoga_koszulka.jpg" alt="Koszulka Hulajnogi" />
+      <img src="images/branding/Hulajnoga_strona_1.jpg" alt="Strona 1" />
+      <img src="images/branding/Hulajnoga_strona_2.jpg" alt="Strona 2" />
+      <img src="images/branding/Hulajnoga_strona_3.jpg" alt="Strona 3" />
     </div>
   </div>
+
   <div class="back-container">
-      <a href="index.html" class="back-link">← Wróć na stronę główną</a>
-    </div>
-  </body>
-  </html>
+    <a href="index.html" class="back-link">← Wróć na stronę główną</a>
+  </div>
+</body>
+</html>
