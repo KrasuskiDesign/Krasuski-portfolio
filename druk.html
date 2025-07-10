@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Druk – Krasuski Design</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('images/background_druk_1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      backdrop-filter: blur(4px);
+    }
+
+    header {
+      background: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    .category {
+      margin: 3rem auto;
+      max-width: 1000px;
+    }
+
+    .category h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .images img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      background: #fff;
+      padding: 0.25rem;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .back-container {
+      text-align: center;
+      margin: 4rem 0 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DRUK</h1>
+  </header>
+
+  <div class="category">
+    <h2>Wizytówki</h2>
+    <div class="images">
+      <img src="images/branding/Wizytówka_1.jpg" alt="Wizytówka 1" />
+      <img src="images/branding/Wizytówka_2.jpg" alt="Wizytówka 2" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Etykiety</h2>
+    <div class="images">
+      <img src="images/branding/Etykieta_beef dripping_1.jpg" alt="Etykieta 1" />
+      <img src="images/branding/Etykieta_beef dripping_2.jpg" alt="Etykieta 2" />
+      <img src="images/branding/Etykieta_beef dripping_3.jpg" alt="Etykieta 3" />
+      <img src="images/branding/Etykieta_beef dripping_4.jpg" alt="Etykieta 4" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Długopisy</h2>
+    <div class="images">
+      <img src="images/branding/Długopis_1.jpg" alt="Długopis 1" />
+      <img src="images/branding/Długopis_2.jpg" alt="Długopis 2" />
+      <img src="images/branding/Długopis_3.jpg" alt="Długopis 3" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Plakaty koncertowe</h2>
+    <div class="images">
+      <img src="images/branding/Koncert_1.jpg" alt="Plakat koncertowy 1" />
+      <img src="images/branding/Koncert_2.jpg" alt="Plakat koncertowy 2" />
+    </div>
+  </div>
+
+  <div class="back-container">
+    <a href="index.html" class="back-link">← Wróć na stronę główną</a>
+  </div>
+</body>
+</html>
