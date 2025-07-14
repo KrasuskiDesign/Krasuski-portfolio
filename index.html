@@ -97,14 +97,25 @@
     transform: translateY(-4px);
   }
 
-  .contact {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 1.2rem;
-  }
+ .contact {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.4rem; /* zwiększona czcionka */
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* delikatna poświata */
+}
 
-  .contact p {
-    margin: 0.5rem 0;
+
+ .contact p {
+  margin: 0.5rem 0;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact p:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
   }
 
   .contact i {
