@@ -7,7 +7,7 @@
   <meta name="description" content="Portfolio Tomasza Krasuskiego – Grafik komputerowy" />
   <title>Krasuski Design</title>
 
-  <!-- Font Awesome dla ikonek -->
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a2e0c2b4be.js" crossorigin="anonymous"></script>
 
   <style>
@@ -38,15 +38,21 @@
       backdrop-filter: blur(4px);
     }
 
+    /* Pasek boczny */
     #sidebar {
       position: fixed;
       top: 0;
-      left: 0;
-      width: 180px;
+      left: -160px;
+      width: 160px;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.95);
       padding-top: 3rem;
+      transition: left 0.3s ease;
       z-index: 1000;
+    }
+
+    #sidebar:hover {
+      left: 0;
     }
 
     #sidebar a {
@@ -69,14 +75,20 @@
     }
 
     main {
-      margin-left: 180px;
+      margin-left: 0;
       padding: 2rem;
+      transition: margin-left 0.3s;
     }
 
-    header {
+    #sidebar:hover ~ main {
+      margin-left: 160px;
+    }
+
+    header, footer {
       background: #000;
-      padding: 2rem 1rem;
+      width: 100%;
       text-align: center;
+      padding: 2rem 1rem;
     }
 
     header h1 {
@@ -154,11 +166,8 @@
     }
 
     footer {
-      background: #000;
-      color: #ccc;
-      text-align: center;
       padding: 1.5rem;
-      margin-top: 4rem;
+      color: #ccc;
     }
 
     .intro-bold {
@@ -172,6 +181,7 @@
     }
   </style>
 </head>
+
 <body>
   <div id="sidebar">
     <a href="index.html" class="nav-link">🏠 Strona główna</a>
@@ -226,7 +236,6 @@
   </main>
 
   <script>
-    // podświetlenie aktywnego linku w sidebarze
     const currentPage = window.location.pathname.split("/").pop();
     const links = document.querySelectorAll("#sidebar .nav-link");
     links.forEach(link => {
