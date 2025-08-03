@@ -10,134 +10,131 @@
   <!-- Font Awesome dla ikonek -->
   <script src="https://kit.fontawesome.com/a2e0c2b4be.js" crossorigin="anonymous"></script>
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-  body {
-    background: url('images/background4.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #f0f0f0;
-    line-height: 1.6;
-  }
+    body {
+      background: url('images/background4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
 
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    backdrop-filter: blur(4px);
-  }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      backdrop-filter: blur(4px);
+    }
 
-  header {
-    background: #000;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
+    header {
+      background: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
 
-  header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-  }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
 
-  header p {
-    font-size: 1.2rem;
-    color: #ccc;
-  }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
 
-  section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #fff;
-  }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #fff;
+    }
 
-  section p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-  }
+    section p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
 
-  .portfolio-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
+    .portfolio-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
 
-  .portfolio-links a {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s, background 0.3s;
-  }
+    .portfolio-links a {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, background 0.3s;
+    }
 
-  .portfolio-links a:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-4px);
-  }
+    .portfolio-links a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-4px);
+    }
 
-.contact {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-shadow:
-    0 0 5px #e97613,
-    0 0 10px #e97613,
-    1px 1px 3px rgba(0, 0, 0, 0.5);
-}
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-shadow:
+        0 0 5px #e97613,
+        0 0 10px #e97613,
+        1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
 
+    .contact p {
+      margin: 0.5rem 0;
+    }
 
-  .contact p {
-    margin: 0.5rem 0;
-  }
+    .contact i {
+      margin-right: 0.5rem;
+      color: #ffd700;
+    }
 
-  .contact i {
-    margin-right: 0.5rem;
-    color: #ffd700;
-  }
+    footer {
+      background: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
 
-  footer {
-    background: #000;
-    color: #ccc;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 4rem;
-  }
-  
-  .intro-bold {
-  text-align: center;
-  max-width: 1400px;
-  margin: auto;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-}
-
-</style>
-
+    .intro-bold {
+      text-align: center;
+      max-width: 1400px;
+      margin: auto;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 
 <body>
@@ -146,49 +143,30 @@
     <p>Tomasz Krasuski - grafik komputerowy</p>
   </header>
 
-<section id="about">
-  <p class="intro-bold">
-    Grafika to nie tylko moja praca – to moja największa pasja.
-  </p>
-  <p style="text-align: center; max-width: 1000px; margin: auto;">
-    Od lat rozwijam swoje umiejętności w projektowaniu wizualnym – od fotomanipulacji, obróbki zdjęć i brandingu po UI/UX, projekty do druku.
-    <br>Mam solidne doświadczenie i kreatywne podejście. Nie boję się żadnych wyzwań – zrealizuję każdy projekt graficzny, bez względu na jego złożoność.
-    <br>Przeniosę twoją wizję na ekran – wykonam projekt od koncepcji po gotowy plik nadający się do druku, opublikowania.
-  </p>
+  <section id="about">
+    <p class="intro-bold">
+      Grafika to nie tylko moja praca – to moja największa pasja.
+    </p>
+    <p style="text-align: center; max-width: 1000px; margin: auto;">
+      Od lat rozwijam swoje umiejętności w projektowaniu wizualnym – od fotomanipulacji, obróbki zdjęć i brandingu po UI/UX, projekty do druku.
+      <br>Mam solidne doświadczenie i kreatywne podejście. Nie boję się żadnych wyzwań – zrealizuję każdy projekt graficzny, bez względu na jego złożoność.
+      <br>Przeniosę twoją wizję na ekran – wykonam projekt od koncepcji po gotowy plik nadający się do druku, opublikowania.
+    </p>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 2rem auto; max-width: 1000px;">
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> Wizytówki dopasowane do marki
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 2rem auto; max-width: 1000px;">
+      <div style="flex: 1 1 250px;" class="box">✔ Wizytówki dopasowane do marki</div>
+      <div style="flex: 1 1 250px;" class="box">✔ Zaproszenia na każdą okazję</div>
+      <div style="flex: 1 1 250px;" class="box">✔ Grafiki i projekty ślubne</div>
+      <div style="flex: 1 1 250px;" class="box">✔ Plakaty / banery reklamowe</div>
+      <div style="flex: 1 1 250px;" class="box">✔ Projekty do druku (ulotki, broszury, etykiety)</div>
+      <div style="flex: 1 1 250px;" class="box">✔ Posty social media & UI/UX</div>
+      <div style="flex: 1 1 250px;" class="box">✔ I wiele innych!</div>
     </div>
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> Zaproszenia na każdą okazję
-    </div>
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> Grafiki i projekty ślubne
-    </div>
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> Plakaty / banery reklamowe
-    </div>
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> Projekty do druku (ulotki, broszury, etykiety)
-    </div>
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> Posty social media & UI/UX
-    </div>
-    <div style="flex: 1 1 250px; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: transform 0.3s, background 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
-      <span style="color:#e97613">✔</span> I wiele innych!
-    </div>
-  </div>
 
- <p class="intro-bold">
-    Jeśli szukasz kogoś, kto zrobi to dobrze, profesjonalnie i z pełnym zaangażowaniem – właśnie znalazłeś!
-  </p>
-</section>
-
-
-
-
-
+    <p class="intro-bold">
+      Jeśli szukasz kogoś, kto zrobi to dobrze, profesjonalnie i z pełnym zaangażowaniem – właśnie znalazłeś!
+    </p>
+  </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
@@ -199,6 +177,7 @@
       <a href="kalendarze.html">Projekty kalendarzy</a>
       <a href="weselne.html">Prezenty weselne</a>
       <a href="web.html">WEB</a>
+      <a href="3d_druk.html">3D + Druk</a>
     </div>
   </section>
 
@@ -208,7 +187,7 @@
       <p><i class="fas fa-phone"></i><strong>Telefon:</strong> 695 498 561</p>
       <p><i class="fas fa-envelope"></i><strong>E-mail:</strong> krasuski.design@gmail.com</p>
       <p><i class="fab fa-behance"></i><strong>Behance:</strong> <a href="https://www.behance.net/tomaszkrasuski" target="_blank" style="color:#fff; text-decoration: underline;">https://www.behance.net/tomaszkrasuski</a></p>
-      <p><i class="fab fa-instagram"></i><strong>Instagram:</strong> krasuski.design <a href="https://www.instagram.com/krasuski.design/" target="_blank" style="color:#fff; text-decoration: underline;">https://www.instagram.com/krasuski.design/</a></p>
+      <p><i class="fab fa-instagram"></i><strong>Instagram:</strong> <a href="https://www.instagram.com/krasuski.design/" target="_blank" style="color:#fff; text-decoration: underline;">@krasuski.design</a></p>
     </div>
   </section>
 
