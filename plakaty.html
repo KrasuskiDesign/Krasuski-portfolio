@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plakaty – Krasuski Design</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('images/background_plakaty.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      backdrop-filter: blur(4px);
+    }
+
+    header {
+      background: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    .category {
+      margin: 3rem auto;
+      max-width: 1000px;
+    }
+
+    .category h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    .opis {
+      text-align: center;
+      font-size: 1rem;
+      color: #cccccc;
+      margin: 1rem auto 2rem;
+      max-width: 800px;
+      font-style: italic;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0 1rem;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      background: #fff;
+      padding: 0.25rem;
+    }
+
+    .back-container {
+      text-align: center;
+      margin: 4rem 0 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .intro-bold {
+      text-align: center;
+      max-width: 1000px;
+      margin: 3rem auto 2rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PLAKATY</h1>
+  </header>
+
+  <br><br>
+  <p class="intro-bold">
+    Projekty plakatów reklamowych, artystycznych i eventowych – nowoczesne, czytelne i przyciągające uwagę.  
+    Każdy projekt dostosowany do druku i wersji cyfrowej.
+  </p>
+
+  <div class="category">
+    <h2>Plakat 1</h2>
+    <p class="opis">Opis plakatu nr 1 – tutaj możesz dodać szczegóły.</p>
+    <div class="images">
+      <img src="images/plakaty/plakat1a.jpg" alt="Plakat 1a" />
+      <img src="images/plakaty/plakat1b.jpg" alt="Plakat 1b" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Plakat 2</h2>
+    <p class="opis">Opis plakatu nr 2 – tutaj możesz dodać szczegóły.</p>
+    <div class="images">
+      <img src="images/plakaty/plakat2a.jpg" alt="Plakat 2a" />
+      <img src="images/plakaty/plakat2b.jpg" alt="Plakat 2b" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Plakat 3</h2>
+    <p class="opis">Opis plakatu nr 3 – tutaj możesz dodać szczegóły.</p>
+    <div class="images">
+      <img src="images/plakaty/plakat3a.jpg" alt="Plakat 3a" />
+      <img src="images/plakaty/plakat3b.jpg" alt="Plakat 3b" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Plakat 4</h2>
+    <p class="opis">Opis plakatu nr 4 – tutaj możesz dodać szczegóły.</p>
+    <div class="images">
+      <img src="images/plakaty/plakat4a.jpg" alt="Plakat 4a" />
+      <img src="images/plakaty/plakat4b.jpg" alt="Plakat 4b" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Plakat 5</h2>
+    <p class="opis">Opis plakatu nr 5 – tutaj możesz dodać szczegóły.</p>
+    <div class="images">
+      <img src="images/plakaty/plakat5a.jpg" alt="Plakat 5a" />
+      <img src="images/plakaty/plakat5b.jpg" alt="Plakat 5b" />
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Plakat 6</h2>
+    <p class="opis">Opis plakatu nr 6 – tutaj możesz dodać szczegóły.</p>
+    <div class="images">
+      <img src="images/plakaty/plakat6a.jpg" alt="Plakat 6a" />
+      <img src="images/plakaty/plakat6b.jpg" alt="Plakat 6b" />
+    </div>
+  </div>
+
+  <div class="back-container">
+    <a href="index.html" class="back-link">← Wróć na stronę główną</a>
+  </div>
+</body>
+</html>
